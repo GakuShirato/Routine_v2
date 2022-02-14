@@ -1,0 +1,23 @@
+{% extends "app/base.html" %}
+{% block content %}
+
+
+<div class="card card-profile my-5 mx-auto">
+    <div class="card-body">
+        <h5 class="card-title text-center">Routine</h5>
+        <div class="container">
+
+            <b>Deleting "<span style="color: red;">{{item}}</span>" is parmanent... do you want to proceed?<br>
+
+            <a class="btn  btn-success " href="{% url 'list_task' %}" >No</a>
+
+            <form method="POST" action="">
+                {% csrf_token %}
+                <input class="btn btn-sm btn-danger" type="submit" value="Yes Delete" name="Yes">
+            </form>
+        </div>
+
+	</div>
+</div>
+
+{% endblock %}

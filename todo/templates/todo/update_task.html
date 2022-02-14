@@ -1,0 +1,28 @@
+{% extends "app/base.html" %}
+{% block content %}
+
+
+<div class="card card-profile my-5 mx-auto">
+    <div class="card-body">
+        <h5 class="card-title text-center">Update</h5>
+        <div class="container">
+
+
+            <p><a class="btn btn-sm btn-success" href="{% url 'list_task' %}" >ホームに戻る</a></p>
+            <p>
+
+            <form method="POST" action="">{% csrf_token %}
+                {{form}}
+                <input class="btn btn-sm btn-success" type="submit" value="アップデート" name="Update">
+            </form>
+
+        <b></b>
+
+
+
+
+        </div>
+	</div>
+</div>
+
+{% endblock %}

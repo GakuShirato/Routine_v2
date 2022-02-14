@@ -1,0 +1,35 @@
+{% extends "app/base.html" %}
+{% block content %}
+
+<div class="post-body row my-4">
+  <div class="post-col col-md-8">
+    {% for post in post_data %}
+    <div class="card mb-4">
+      <div class="box-body">
+        <h2 class="box-title">{{ post.title }}</h2>
+        <p class="card-text">{{ post.content|truncatechars:100 }}</p>
+        <div class="card-btn btn-warning">詳細</div>
+      </div>
+      <div class="card-footer text-muted">
+        {{ post.created|date }}
+      </div>
+      <a class="stretched-link" href="{% url 'post_detail' post.id %}"></a>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <h5 class="card-header">Timeline</h5>
+      <div class="card-body">
+        <p>投稿してみましょう</p>
+        <p class="mb-0">
+          どこかお出かけですか？
+          お店やイベントを紹介してみましょう！
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

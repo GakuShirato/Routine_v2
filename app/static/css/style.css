@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(-225deg, #304352 0%, #d7d2cc 55%, #3498db 100%);
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    font-family: 'Kaushan Script', cursive;
+}
+
+main {
+    flex: 1;
+}
+
+.title {
+    font-size: 30px;
+    color: #3498db;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.card-profile {
+    width: 700px;
+    border: 0 ;
+    border-radius: 1rem;
+    box-shadow: 0.0.2rem 0.2rem 0 rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0, 0.2);
+}
+
+.button {
+    width: 150px;
+}
+
+.btn {
+    font-size: 80%;
+    margin: 10px;
+    border-radius: 5rem;
+    font-weight: bold;
+}
+
+.profile-table {
+    width: 100%;
+    border: 1px solid #d1dbeb;
+    border-radius: 8px;
+    border-collapse: separate;
+    overflow: hidden;
+}
+
+.profile-table {
+    width: 200px;
+    padding: 16px 24px;
+    text-align: left;
+}
+
+.profile-table .data {
+    padding: 16px 24px;
+}
+
+.form-wrap {
+    display: grid;
+    gap: 16px;
+    padding: 5px;
+}
+
+.form-wrap-2 {
+    grid-template-columns: repeat(2,1fr);
+}
+
+.form-control-focus {
+    box-shadow: none;
+}
+
+.card-auth {
+    width: 400px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 1rem;
+    box-shadow: 0 15px 15px 0 rgba(0,0,0,0.1);
+}
+
+.card-title {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.card-body {
+    padding: 3rem;
+}
+
+.form-auth {
+    width: 100%
+}
+
+.form-label-group {
+    margin-bottom: 1rem;
+}
+
+.form-label-group input {
+    border-radius: 2rem;
+}
+
+.user {
+    font-size: 16px ;
+    background: transparent;
+    border: 0 solid;
+    border-bottom: 1px solid #3F5EFB;
+    color: #3F5EFB;
+    display: block;
+    padding: 10px auto;
+    margin: 0 10px 10px 0;
+    transition: 250ms background ease-in;
+}
+
+.header {
+    width: 200px;
+    padding: 16px 24px;
+    text-align: left;
+}
+
+.form-control {
+    font-size: 16px ;
+    background: transparent;
+    border: 0 solid;
+    border-bottom: 1px solid #3F5EFB;
+    display: block;
+    padding: 10px auto;
+    margin: 0 10px 10px 0;
+}
+
+.time-body {
+    width: 800px;
+    margin:auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.input_time {
+    width: 450px;
+    margin-left: 35px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.time_input {
+    padding-left: 30px;
+    font-size: 32px;
+    color: #ff0000 ;
+    text-align: center;
+}
+
+.formpost {
+    margin-bottom: 1rem;
+}
+
+.box-title {
+    font-size: 1.2em;
+    background: #3F5EFB;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.card {
+    position: relative;
+    border: solid 3px #3F5EFB;
+}
+
+.card-footer {
+    font-size: 12px;
+    padding: 6px;
+    padding-left: 20px;
+}
+
+.card-text {
+    margin-left: 20px;
+}
+
+.card-btn {
+    width: 44px;
+    font-size: 12px;
+    padding-left: 10px;
+    margin: 10px;
+    border-radius: 5rem;
+    font-weight: bold;
+}
+
+
+
+
+
+.post {
+    width: 100%;
+    border: 0 ;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 3px #3F5EFB;
+    box-shadow: 0.0.2rem 0.2rem 0 rgba(0,0,0,0.1);
+    background-color: #ffffff;
+}
+
+.todo-body{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+.container2{
+    width:100%;
+    margin: 20px auto;
+    padding:20px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+}
+.item-row{
+    background-color: #3F5EFB;;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 3px;
+    color: white;
+    box-shadow: 0px -1px 10px -4px rgba(0,0,0,0.75);
+}
+.save{
+    width: 120px;
+    margin-left: 20px;
+    background-color:  #3F5EFB;;
+    color: white;
+}
+
+
+.timer{
+	background-color: #dc3545;
+	border-radius: 5px;
+	padding: 5px;
+
+}
