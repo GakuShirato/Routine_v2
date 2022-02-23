@@ -25,12 +25,12 @@
         <div class="container">
             <ul class="navbar-nav ml-auto">
 
-                <li class="nav-item">
-                    <a href="{% url 'list_task' %}" class="title">Routine</a>
-                </li>
                 {% if user.is_authenticated %}
                 <li class="nav-item">
-                    <a class="title" href="{% url 'post_index' %}">Timeline</a>
+                    <a href="{% url 'list_task' %}" class="title">COUNTDOWN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="title" href="{% url 'post_index' %}">TIMELINE</a>
                 </li>
 
                 <li class="nav-item">
