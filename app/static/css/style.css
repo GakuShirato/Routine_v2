@@ -239,3 +239,127 @@ main {
 	padding: 5px;
 
 }
+
+
+
+
+section {
+    width: 700px;
+    margin-left: 120px;
+    margin-top: 50px;
+}
+
+.btn_02_a {
+    display: block;
+    color: #fff;
+    font-size: 32px;
+    padding: 3.5rem .5rem;
+    background-color: #3F5EFB;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.btn_02_a:hover {
+    background: #000000;
+}
+
+.btn_02_a span {
+    position: relative;
+    padding-left: 36px;
+}
+
+.btn_02_a span:before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -13px;
+}
+
+.btn_02_a span:after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border: 0;
+    border-top: 3px solid #3F5EFB;
+    border-right: 3px solid #3F5EFB;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: 7px;
+    margin-top: -5px;
+}
+
+.btn_02_a:hover span:after {
+    border-top: 3px solid #000000;
+    border-right: 3px solid #000000;
+}
+
+
+
+.btn_02_b {
+    display: block;
+    color: #fff;
+    font-size: 32px;
+    padding: 3.5rem .5rem;
+    background-color: #304352;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.btn_02_b:hover {
+    background: #000000;
+}
+
+.btn_02_b span {
+    position: relative;
+    padding-left: 36px;
+}
+
+.btn_02_b span:before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -13px;
+}
+
+.btn_02_b span:after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border: 0;
+    border-top: 3px solid #304352;
+    border-right: 3px solid #304352;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: 7px;
+    margin-top: -5px;
+}
+
+.btn_02_b:hover span:after {
+    border-top: 3px solid #000000;
+    border-right: 3px solid #000000;
+}
+
+.card-button {
+    width: 1200px;
+    margin-top: 150px;
+    padding: 150px;
+    border: 0 ;
+    border-radius: 1rem;
+    box-shadow: 0.0.2rem 0.2rem 0 rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0, 0.2);
+}
+

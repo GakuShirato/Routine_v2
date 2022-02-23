@@ -1,8 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import task
 from .forms import TaskForm, UpdateForm
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.generic import View
+
 
 def ListTask(request):
     queryset = task.objects.order_by('complete','due')
@@ -11,7 +10,7 @@ def ListTask(request):
         form = TaskForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('/')
+            return redirect('list_task')
     context = {
         'tasks':queryset,
         'form':form,
@@ -26,7 +25,7 @@ def UpdateTask(request, pk):
         form = UpdateForm(request.POST, instance=queryset)
         if form.is_valid():
             form.save()
-            return redirect('/')
+        return redirect('list_task')
 
     context = {
         'form':form
@@ -39,7 +38,7 @@ def deleteTask(request, pk):
 	queryset = task.objects.get(id=pk)
 	if request.method == 'POST':
 		queryset.delete()
-		return redirect('/')
+		return redirect('list_task')
 
 	context = {
 		'item':queryset

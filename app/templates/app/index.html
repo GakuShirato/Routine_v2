@@ -2,10 +2,15 @@
 
 {% block content %}
 
-
-<div class="card-body">
-        <p>Routine</p>
+<div class="card card-button my-5 mx-auto">
+    <div class="button-body">
+        <section>
+            <a href="{% url 'list_task' %}" class="btn_02_a"><span>COUNTDOWN</span></a>
+        </section>
+        <section>
+            <a href="{% url 'post_index' %}" class="btn_02_b"><span>TIMELINE</span></a>
+        </section>
+    </div>
 </div>
-
 
 {% endblock %}
